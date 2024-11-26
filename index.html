@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="slide1">
+        <div id="slide1-container">
+          <div class="text-area">
+            <div id="top-btn">NIKE AIRMAX</div>
+            <h1>NEW AIRMAX PERFECT IN ALL.</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate incidunt sed. Accusamus, cum
+              a?</P>
+            <h4>$59.99</h4>
+            <div id="buy-btn">BUY NOW</div>
+          </div>
+          <div id="img1-area"><img id="shoes-img"
+              src="https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/f02e77be-5d07-4e2a-a2a9-9f0241cceccb.png"
+              alt=""></div>
+        </div>
+      </div>
+      <div class="swiper-slide" id="slide2">
+        <div id="slide2-container">
+          <div class="img-area"><img id="watch-img"
+              src="https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/3430e33a-461c-48fd-92f8-96e769265b77.png"
+              alt=""></div>
+          <div class="text-area">
+            <div id="top-btn">APPLE WATCH</div>
+            <h1>TAKE YOUR WORKOUTS FURTHER.</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate incidunt sed. Accusamus, cum
+              a?</P>
+            <h4>$169.99</h4>
+            <div id="buy-btn">BUY NOW</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" id="slide3">
+        <div id="slide3-container">
+          <div class="text-area-2">
+            <div id="top-btn">JBL CHARGE 3</div>
+            <h1>WIRELESS BLUETOOTH STREAMING.</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate incidunt sed. Accusamus, cum
+              a?</P>
+            <h4>$83.99</h4>
+            <div id="buy-btn">BUY NOW</div>
+          </div>
+          <div id="img-area-2"><img id="speaker-img"
+              src="https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/7f647753-8e34-4ab7-a902-dec468c23f08.png"
+              alt=""></div>
+        </div>
+      </div>
+      <div class="swiper-slide" id="slide4">
+        <div id="slide3-container">
+          <div id="img-area-2"><img id="drone-img"
+              src="https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/c1abb914-662f-48b7-a588-0889f1e161b0.png"
+              alt=""></div>
+          <div class="text-area-2">
+            <div id="top-btn">DJI MAVIC 2</div>
+            <h1>SEE THE BIGGER PICTURE.</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptate incidunt sed. Accusamus, cum
+              a?</P>
+            <h4>$67.99</h4>
+            <div id="buy-btn">BUY NOW</div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+    <div class="swiper-pagination " style="--swiper-pagination-color: #000000;"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      effect:"fade",
+      effect:"coverflow",
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      speed: 800,
+    });
+  </script>
+</body>
+
+</html>

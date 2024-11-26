@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev:hover {
+  transform: translateX(-10px);
+  --swiper-theme-color: rgb(7, 7, 7);
+}
+
+.swiper-button-next:hover {
+  transform: translateX(10px);
+  --swiper-theme-color: rgb(7, 7, 7);
+}
+
+.swiper-button-prev {
+  width: 50px;
+  --swiper-theme-color: rgba(0, 0, 0, 0.212);
+  transition: transform 0.5s ease;
+  padding-left: 25px;
+}
+
+.swiper-button-next {
+  width: 50px;
+  --swiper-theme-color: rgba(0, 0, 0, 0.212);
+  transition: transform 0.5s ease;
+  padding-right: 25px;
+}
+
+.swiper-pagination-bullet {
+  width: 40px;
+  height: 2px;
+  border-radius: 0px;
+}
+
+.swiper-pagination {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#slide1 {
+  background-image: url('https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/4288d8c1-4dd9-4e5e-ba6a-24bf662014e6.jpeg');
+}
+
+#slide2 {
+  background-image: url('https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/40b72352-1ed0-463c-a258-72127fe987b5.jpeg');
+}
+
+#slide3 {
+  background-image: url('https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/7a3eded9-bf8d-4a8a-b4ba-c6a8ef68529e.jpeg');
+}
+
+#slide4 {
+  background-image: url('https://files.elfsight.com/storage/f7e9a9de-578a-404d-9755-29717c16030a/55847ae0-f6a4-4225-a4e9-fc12e45581c2.jpeg');
+}
+
+#slide1-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  #img1-area {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+#slide2-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .text-area {
+    padding-left: 100px;
+  }
+}
+
+#slide3-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #img-area-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.text-area {
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+  }
+}
+
+.text-area-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  p {
+    width: 70%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+#top-btn {
+  width: 150px;
+  padding: 6px 15px;
+  font-size: 16px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#buy-btn {
+  width: 180px;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: black;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+}
+
+#shoes-img {
+  width: 75%;
+}
+
+#watch-img {
+  width: 75%;
+}
+
+#speaker-img {
+  width: 60%;
+}
+
+#drone-img {
+  width: 60%;
+}
+
+@media (max-width: 1080px) {
+  .text-area {
+    h1 {
+      font-size: 40px;
+
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h4 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 22px;
+    }
+  }
+
+  #top-btn {
+    width: 135px;
+
+    font-size: 16px;
+
+  }
+
+  #buy-btn {
+    width: 160px;
+    font-size: 18px;
+
+  }
+
+  .text-area-2 {
+    h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    p {
+      width: 70%;
+      font-size: 18px;
+
+    }
+
+    h4 {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .text-area {
+    h1 {
+      font-size: 30px;
+
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    h4 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+
+  #top-btn {
+    width: 125px;
+
+    font-size: 14px;
+
+  }
+
+  #buy-btn {
+    width: 150px;
+    font-size: 16px;
+
+  }
+
+  .text-area-2 {
+    h1 {
+      font-size: 30px;
+
+    }
+
+    p {
+      width: 70%;
+      font-size: 16px;
+
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  #speaker-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  #slide1-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #img1-area {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  #slide2-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .text-area {
+      padding-left: 0px;
+    }
+
+    .img-area {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+  .text-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 25px;
+
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    h4 {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      font-size: 20px;
+    }
+  }
+
+  #top-btn {
+    width: 125px;
+
+    font-size: 14px;
+
+  }
+
+  #buy-btn {
+    width: 150px;
+    font-size: 16px;
+
+  }
+
+  .text-area-2 {
+    h1 {
+      font-size: 25px;
+
+    }
+
+    p {
+      width: 70%;
+      font-size: 16px;
+
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  #slide3-container {
+    width: 90%;
+  }
+
+  .swiper-button-prev {
+    padding-left: 12px;
+    padding-bottom: 15px;
+    --swiper-navigation-size: 25px;
+  }
+
+  .swiper-button-next {
+    padding-left: 12px;
+    padding-bottom: 15px;
+    --swiper-navigation-size: 25px;
+  }
+
+  #speaker-img {
+    width: 80%;
+  }
+
+  #shoes-img {
+    padding-top: 20px;
+    width: 55%;
+  }
+
+  #watch-img {
+    width: 45%;
+    padding-bottom: 20px;
+  }
+}
